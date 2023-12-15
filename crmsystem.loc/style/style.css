@@ -1,0 +1,119 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #ffffff;
+    display: flex;
+}
+
+.td {
+    float: left;
+}
+
+.sidebar {
+    background-color: #222222;
+    color: #ffffff;
+    width: 240px; /* Ширина боковой панели навигации */
+    padding: 20px 0; /* Расстояние сверху и снизу */
+    display: flex;
+    flex-direction: column; /* Элементы располагаются сверху вниз */
+    align-items: center; /* Выравнивание по центру */
+    height: 100vh; /* Высота 100% вьюпорта */
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-top: 20px; /* Отступ между лого и заголовком */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Добавьте это свойство для выравнивания текста влево */
+}
+
+.navigate {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+nav li {
+    margin: 10px 0;
+    text-align: left;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 5px 10px;
+    text-align: left;
+    transition: background-color 0.3s; /* Добавьте анимацию перехода цвета фона */
+}
+
+nav a:hover {
+    background-color: #333333; /* Измените цвет фона при наведении курсора */
+}
+
+
+main {
+    flex: 1;
+}
+
+section {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для списка клиентов */
+.clients table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.clients th, .clients td {
+    border: 1px solid #333333;
+    padding: 10px;
+    text-align: left;
+}
+
+.clients th {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.clients tr:nth-child(even) {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+input[type="text"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+

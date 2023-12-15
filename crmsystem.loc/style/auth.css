@@ -1,0 +1,104 @@
+body {
+    background-color: white;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: opacity 0.5s; /* Анимация плавного появления */
+}
+
+.auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    z-index: 1;
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    transition: opacity 0.5s; /* Анимация плавного появления */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    opacity: 0;
+    transition: opacity 0.5s; /* Анимация плавного появления */
+}
+
+.input-group label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    color: black;
+    text-align: left;
+}
+
+.authButtons {
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s; /* Анимация плавного появления */
+}
+
+.authButtons button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    display: inline-block;
+    z-index: 0;
+    font-family: Arial, sans-serif;
+    width: 195px;
+}
+
+.logo,
+.auth,
+.input-group,
+.input-group label,
+.input-group input,
+.authButtons,
+.authButtons button,
+.forgot-password-button {
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.logo,
+.auth,
+.input-group,
+.input-group label,
+.input-group input,
+.authButtons,
+.authButtons button,
+.forgot-password-button {
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
